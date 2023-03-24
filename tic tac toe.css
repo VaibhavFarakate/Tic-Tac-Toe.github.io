@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Noto+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: blueviolet;
+    color: white;
+    height: 50px;
+    font-size: 25px ;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-family: 'Noto Serif', serif;
+}
+nav ul{
+    list-style-type: none;
+}
+body{
+    background-color: yellow;
+}
+.gameContainer{
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,20vh);
+    grid-template-rows: repeat(3,20vh);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 10vh;
+}
+.cell{
+    border: 2px solid black;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.cell:hover{
+    background-color: rgb(142, 234, 237);
+}
+.statusText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(247, 2, 141);
+    margin: 25px 0;
+}
+.info{
+    padding: 0 35px;
+}
+.Gif img{
+    width:0;
+    transition: width 1s ease-in-out;
+}
+#resetBtn{
+    display: block;
+    margin: 10px auto;
+    padding: 4px 6px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#resetBtn:hover{
+    cursor: pointer;
+    background-color: rgb(67, 99, 100);
+}
